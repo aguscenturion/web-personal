@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Proyectos</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre-mi.html">Sobre Mí</a></li>
+          <li><a href="proyectos.html" class="active">Proyectos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="grid-proyectos">
+      <div class="proyecto">
+        <h3>Portafolio Web</h3>
+        <p>Mi primer sitio web donde muestro mis habilidades</p>
+      </div>
+      <div class="proyecto">
+        <h3>App de Tareas</h3>
+        <p>Una aplicación para organizar tareas diarias con JavaScript.</p>
+      </div>
+      <div class="proyecto">
+        <h3>Blog Estudiantil</h3>
+        <p>Blog con artículos sobre programación, tecnología y más.</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Tu Nombre. Todos los derechos reservados.</p>
+      <button id="mostrar-cajas" class="btn mostrar-cajas">
+        Mostrar cajas
+      </button>
+    </footer>
+    <script>
+      document
+        .getElementById('mostrar-cajas')
+        .addEventListener('click', function () {
+          document.body.classList.toggle('mostrar-bordes');
+        });
+    </script>
+  </body>
+</html>

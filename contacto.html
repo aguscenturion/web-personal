@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contacto</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre-mi.html">Sobre Mí</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="formulario-contacto">
+        <h2>¿Querés ponerte en contacto?</h2>
+        <p>Completá el siguiente formulario y te responderé a la brevedad.</p>
+        <form action="#">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tucorreo@ejemplo.com"
+            required
+          />
+
+          <label for="comentario">Comentario:</label>
+          <textarea
+            id="comentario"
+            name="comentario"
+            rows="4"
+            placeholder="Escribí tu mensaje..."
+            required
+          ></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <section class="extra redes-contacto">
+        <h3>También podés encontrarme en:</h3>
+        <details>
+          <summary>Ver redes sociales</summary>
+          <ul>
+            <li>Instagram: <a href="#">@tunombre</a></li>
+            <li>Twitter: <a href="#">@tunombre</a></li>
+            <li>LinkedIn: <a href="#">linkedin.com/in/tunombre</a></li>
+          </ul>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Tu Nombre. Todos los derechos reservados.</p>
+      <button id="mostrar-cajas" class="btn mostrar-cajas">
+        Mostrar cajas
+      </button>
+    </footer>
+    <script>
+      document
+        .getElementById('mostrar-cajas')
+        .addEventListener('click', function () {
+          document.body.classList.toggle('mostrar-bordes');
+        });
+    </script>
+  </body>
+</html>

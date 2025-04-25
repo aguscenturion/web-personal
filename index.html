@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio | Sitio Personal</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenido a Mi Sitio Web Personal</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="sobre-mi.html">Sobre Mí</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>¡Hola! Soy Tu Nombre</h2>
+          <p>
+            Este sitio es una muestra de lo que me gusta, lo que he aprendido y
+            mis proyectos personales. ¡Gracias por visitar!
+          </p>
+          <a href="sobre-mi.html" class="btn">Conoceme más</a>
+        </div>
+        <img
+          src="assets/img/mi-foto.png"
+          alt="Imagen personal"
+          class="hero-image"
+        />
+      </section>
+
+      <!-- Elemento adicional: <mark> para resaltar texto -->
+      <section class="extra">
+        <h3>¿Sabías que...?</h3>
+        <p>
+          Este sitio fue construido con <mark>HTML5</mark>, <mark>CSS3</mark> y
+          mucho entusiasmo.
+        </p>
+        <!-- <mark> se usa para resaltar partes importantes del texto -->
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Tu Nombre. Todos los derechos reservados.</p>
+      <button id="mostrar-cajas" class="btn mostrar-cajas">
+        Mostrar cajas
+      </button>
+    </footer>
+    <script>
+      document
+        .getElementById('mostrar-cajas')
+        .addEventListener('click', function () {
+          document.body.classList.toggle('mostrar-bordes');
+        });
+    </script>
+  </body>
+</html>

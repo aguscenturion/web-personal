@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Mí</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sobre Mí</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre-mi.html" class="active">Sobre Mí</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="extra">
+        <p>
+          Soy estudiante de desarrollo web. Me apasiona la tecnología, el diseño
+          y la programación. Siempre estoy aprendiendo nuevas habilidades.
+        </p>
+      </section>
+
+      <section>
+        <h2>Datos de Interés</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Categoría</th>
+              <th>Detalles</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Películas</td>
+              <td>Inception, Matrix, Star Wars</td>
+            </tr>
+            <tr>
+              <td>Hobbies</td>
+              <td>Leer, videojuegos, música</td>
+            </tr>
+            <tr>
+              <td>Estudios</td>
+              <td>Desarrollo Web, Diseño UX</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Tu Nombre. Todos los derechos reservados.</p>
+      <button id="mostrar-cajas" class="btn mostrar-cajas">
+        Mostrar cajas
+      </button>
+    </footer>
+    <script>
+      document
+        .getElementById('mostrar-cajas')
+        .addEventListener('click', function () {
+          document.body.classList.toggle('mostrar-bordes');
+        });
+    </script>
+  </body>
+</html>
